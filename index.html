@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <img src="./imgs/logo.png" alt="">
+        <nav>
+            <ul class="navUl">
+                <li ><button class="selectedNav">БАНК</button></li>
+                <li><button>БИЗНЕС</button></li>
+                <li><button>ИНВЕСТИЦИИ</button></li>
+                <li><button>СТРАХОВАНИЕ</button></li>
+                <li><button>МОБАЙЛ</button></li>
+                <li><button>ПУТЕШЕСТВИЯ</button></li>
+                <li><button>РАЗВЛЕЧЕНИЯ</button></li>
+            </ul>
+        </nav>
+        <div class="rightNav">
+        <button class="headerBtn">ВОЙТИ</button>
+        <div class="burger">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <h1>Конвертер валют онлайн</h1>
+       <div class="converter">
+        <div class="left">
+            <p class="info">У меня есть </p>
+            <ul class="valyutaUl">
+                <li class="selected"><button >RUB</button></li>
+                <li><button>USD</button></li>
+                <li><button>EUR</button></li>
+                <li><button>GBP</button></li>
+            </ul>
+            <div class="mainInput">
+                <input type="number">
+                <p class="valyutaInfo">1 RUB = 0.0135 USD</p>
+            </div>
+        </div>
+        <div class="right">
+            <p class="info">Хочу приобрести </p>
+            <ul class="valyutaUl">
+                <li><button>RUB</button></li>
+                <li class="selected"><button>USD</button></li>
+                <li><button>EUR</button></li>
+                <li><button>GBP</button></li>
+            </ul>
+            <div class="mainInput">
+                <input type="number">
+                <p class="valyutaInfo">1 USD = 73.8896 RUB</p>
+            </div>
+        </div>
+       </div>
+    </main>
+    
+
+    <script src="/script.js"></script>
+</body>
+</html>
