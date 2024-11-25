@@ -10,7 +10,8 @@
 </head>
 <body>
     <header>
-        <img src="./imgs/logo.png" alt="">
+      <div class="first">
+       <div class="imgPart"> <img src="./imgs/logo.png" alt=""></div>
         <nav>
             <ul class="navUl">
                 <li ><button class="selectedNav">БАНК</button></li>
@@ -28,6 +29,7 @@
             <i class="fa-solid fa-bars fa-lg"></i>
         </div>
     </div>
+      </div>
     </header>
 
     <main>
@@ -36,33 +38,36 @@
         <div class="left">
             <p class="info">У меня есть </p>
             <ul class="valyutaUl">
-                <li class="selected"><button >RUB</button></li>
-                <li><button>USD</button></li>
-                <li><button>EUR</button></li>
-                <li><button>GBP</button></li>
+                <li class="firstAreaItem selected" data-currency="rub"><button >RUB</button></li>
+                <li class="firstAreaItem" data-currency="usd"><button>USD</button></li>
+                <li class="firstAreaItem" data-currency="eur"><button>EUR</button></li>
+                <li class="firstAreaItem" data-currency="gbp"><button>GBP</button></li>
             </ul>
             <div class="mainInput">
-                <input type="number">
+                <input type="text"  class="leftInput" >
                 <p class="valyutaInfo">1 RUB = 0.0135 USD</p>
             </div>
         </div>
         <div class="right">
             <p class="info">Хочу приобрести </p>
             <ul class="valyutaUl">
-                <li><button>RUB</button></li>
-                <li class="selected"><button>USD</button></li>
-                <li><button>EUR</button></li>
-                <li><button>GBP</button></li>
+                <li class="secondAreaItem" data-currency="rub"><button>RUB</button></li>
+                <li class="secondAreaItem selected" data-currency="usd"><button>USD</button></li>
+                <li class="secondAreaItem" data-currency="eur"><button>EUR</button></li>
+                <li class="secondAreaItem" data-currency="gbp"><button>GBP</button></li>
             </ul>
             <div class="mainInput">
-                <input type="number">
-                <p class="valyutaInfo">1 USD = 73.8896 RUB</p>
+                <input type="text"  class="rightInput" >
+                <p class="valyutaInfo2 valyutaInfo">1 USD = 73.8896 RUB</p>
             </div>
         </div>
+       </div>
+       <div class="errorMessage hidden">
+        <p> Some problems occured </p>
        </div>
     </main>
     
 
-    <script src="/script.js"></script>
+    <script src="/script.js" type="module"></script>
 </body>
 </html>
